@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 35-historial-partidas.js
 EJERCICIO 35 — HISTORIAL DE PARTIDAS
 Dificultad: Avanzado
 ************************************************
