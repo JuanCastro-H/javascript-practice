@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 33-revision-contrasenas.js
 EJERCICIO 33 — REVISIÓN DE CONTRASEÑAS
 Dificultad: Avanzado
 ************************************************
