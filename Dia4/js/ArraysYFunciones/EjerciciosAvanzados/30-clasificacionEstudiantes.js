@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 30-clasificacion-estudiantes.js
 EJERCICIO 30 — CLASIFICACIÓN DE ESTUDIANTES
 Dificultad: Avanzado
 ************************************************
