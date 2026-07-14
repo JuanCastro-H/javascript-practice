@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 23-sistema-calificaciones.js
 EJERCICIO 23 — SISTEMA DE CALIFICACIONES
 Dificultad: Avanzado
 ************************************************
