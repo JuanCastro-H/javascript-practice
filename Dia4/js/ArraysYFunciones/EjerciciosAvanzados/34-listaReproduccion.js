@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 34-lista-reproduccion.js
 EJERCICIO 34 — LISTA DE REPRODUCCIÓN
 Dificultad: Avanzado
 ************************************************
