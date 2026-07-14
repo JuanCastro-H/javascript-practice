@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 31-inventario-categorias.js
 EJERCICIO 31 — INVENTARIO POR CATEGORÍAS
 Dificultad: Avanzado
 ************************************************
