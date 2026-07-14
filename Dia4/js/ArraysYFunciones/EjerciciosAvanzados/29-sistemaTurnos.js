@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 29-sistema-turnos.js
 EJERCICIO 29 — SISTEMA DE TURNOS
 Dificultad: Avanzado
 ************************************************
