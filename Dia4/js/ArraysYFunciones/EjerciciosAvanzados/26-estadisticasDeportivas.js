@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 26-estadisticas-deportivas.js
 EJERCICIO 26 — ESTADÍSTICAS DEPORTIVAS
 Dificultad: Avanzado
 ************************************************
