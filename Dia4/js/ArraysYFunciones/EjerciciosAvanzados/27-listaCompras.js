@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 27-lista-compras.js
 EJERCICIO 27 — LISTA DE COMPRAS INTELIGENTE
 Dificultad: Avanzado
 ************************************************
