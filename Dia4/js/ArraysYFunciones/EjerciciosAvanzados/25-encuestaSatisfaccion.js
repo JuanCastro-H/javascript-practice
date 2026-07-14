@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 25-encuesta-satisfaccion.js
 EJERCICIO 25 — ENCUESTA DE SATISFACCIÓN
 Dificultad: Avanzado
 ************************************************
