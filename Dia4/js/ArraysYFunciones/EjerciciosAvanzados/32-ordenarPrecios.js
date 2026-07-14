@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 32-ordenar-precios.js
 EJERCICIO 32 — ORDENAR PRODUCTOS POR PRECIO
 Dificultad: Avanzado
 ************************************************
