@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 24-ranking-videojuegos.js
 EJERCICIO 24 — RANKING DE VIDEOJUEGOS
 Dificultad: Avanzado
 ************************************************
