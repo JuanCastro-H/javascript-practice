@@ -34,4 +34,19 @@ var libros = [
     { titulo: "Libro C", disponible: true }
 ];
 
+function prestarLibro (libros) {
+    let libro;
+    let libroDisponible =  libros.some(libro => libro.disponible === true);
 
+    if (libroDisponible){
+        libro = libros.find(libro => libro.disponible === true);
+    } else {
+        alert("No hay libros disponibles");
+    }
+
+    return libro
+};
+
+const libroPrestar = prestarLibro(libros);
+
+console.log("El libro que se te ha prestado es: " + libroPrestar.titulo);
