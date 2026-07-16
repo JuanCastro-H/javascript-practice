@@ -55,4 +55,8 @@ function promedioPuntos (puntosPartidos){
 }
 
 
+const pTotales = puntosTotales(puntosPartidos);
+console.log("Cantidad de puntos totales de todos los partidos: " + pTotales);
 
+const promedio = promedioPuntos(puntosPartidos);
+console.log("El promedio fue de: " + promedio);
