@@ -26,3 +26,10 @@ Bonus:
 
 - Mostrar la nota más alta.
 */
+
+var calificaciones = [7, 8, 9, 6, 10];
+
+function aprobados (calificaciones) {
+    return calificaciones.every(calificacion => calificacion >= 6);
+};
+
