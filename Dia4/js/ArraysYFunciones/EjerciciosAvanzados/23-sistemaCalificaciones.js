@@ -33,3 +33,12 @@ function aprobados (calificaciones) {
     return calificaciones.every(calificacion => calificacion >= 6);
 };
 
+function promedio (calificacion){
+    let promedio =  calificaciones.reduce((promedio, calificacionActual) => {  });
+};
+
+const alumnosAprobados = aprobados(calificaciones);
+console.log("Todos los alumnos aprovaron: " + alumnosAprobados);
+
+const promedioAlumnos =  promedio(calificaciones);
+console.log("El promedio de calificacin de los alumnos fue de: " +  promedioAlumnos);
