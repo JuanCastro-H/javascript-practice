@@ -27,3 +27,11 @@ Bonus:
 
 - Mostrar un mensaje si no hay libros disponibles.
 */
+
+var libros = [
+    { titulo: "Libro A", disponible: false },
+    { titulo: "Libro B", disponible: true },
+    { titulo: "Libro C", disponible: true }
+];
+
+
