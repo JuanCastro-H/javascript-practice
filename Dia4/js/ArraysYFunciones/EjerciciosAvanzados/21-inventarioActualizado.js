@@ -57,3 +57,33 @@ function agregarProducto (productos, nuevo_producto){
 
 };
 
+function eliminarProductos (productos){
+
+    // Filtrar los productos agotados
+    let productosAgotados = productos.filter(producto => producto.stock <= 0);
+
+    // Recorrer los productos agotados
+    for (let i = 0 ; i<productosAgotados.length ; i++){
+        // Obtener 1 a 1 cada producto agotado
+        let productoAgotado = productosAgotados[i];
+        // Obtener indice del producto agotado en la lista de productos
+        let indiceProducto = productos.indexOf(productoAgotado);
+
+        // Verificar si se encontro
+        if (indiceProducto !== -1) {
+            // Y eliminarlo
+            productos.splice(indiceProducto, 1);
+        }
+    }
+
+    return {
+        productos : productos,
+        productosAgotados : productosAgotados,
+    }
+
+}
+
+
+
+
+
