@@ -45,3 +45,17 @@ function obternerRespuestasNegativas (resultadosEncuesta) {
 
 }
 
+function analizarEncuesta (){
+
+    let resultadosNegativos = buscarRespuestasNegativas(resultadosEncuesta);
+
+    if (resultadosNegativos){
+        let respuestaNegativa = obternerRespuestasNegativas(resultadosEncuesta);
+        console.log("Las encuestas negativas fueron: " + respuestaNegativa);
+    } else {
+        console.log("No hay resultados negativos en la encuesta.");
+    }
+
+}   
+
+analizarEncuesta();
