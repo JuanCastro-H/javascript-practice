@@ -27,3 +27,13 @@ Bonus:
 
 - Calcular el porcentaje de respuestas negativas.
 */
+
+var resultadosEncuesta = [5, 4, 4, 5, 5, 3, 10];
+
+function buscarRespuestasNegativas (resultadosEncuesta) {
+
+    return resultadosEncuesta.some(resultado => resultado < 3);
+
+};
+
+
