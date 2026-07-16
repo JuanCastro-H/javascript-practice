@@ -37,3 +37,11 @@ function buscarRespuestasNegativas (resultadosEncuesta) {
 };
 
 
+function obternerRespuestasNegativas (resultadosEncuesta) {
+
+    let respuestasNegativas = resultadosEncuesta.filter(resultado => resultado < 3);
+
+    return respuestasNegativas;
+
+}
+
