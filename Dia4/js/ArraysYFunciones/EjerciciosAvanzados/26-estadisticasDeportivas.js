@@ -39,5 +39,20 @@ function puntosTotales (puntosPartidos){
     return puntosTotales;
 };
 
+function promedioPuntos (puntosPartidos){
+
+    let sumaTotal = puntosTotales(puntosPartidos);
+
+    let promedio = sumaTotal / puntosPartidos.length;
+
+    if (promedio >= 85){
+        console.log("El promedio de puntos de los partidos fue mayor a 85");
+    } else {
+        console.log("El promedio de los partidos fue menor a 85");
+    }
+
+    return promedio
+}
+
 
 
