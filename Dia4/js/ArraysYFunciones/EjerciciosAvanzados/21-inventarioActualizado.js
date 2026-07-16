@@ -49,7 +49,11 @@ var productos = [
 var nuevo_producto = { nombre : "Cafe", stock: 8};
 
 
+function agregarProducto (productos, nuevo_producto){
 
+    productos.push(nuevo_producto);
 
+    return productos;
 
+};
 
