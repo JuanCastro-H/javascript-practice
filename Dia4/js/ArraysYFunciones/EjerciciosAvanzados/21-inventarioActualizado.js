@@ -83,6 +83,27 @@ function eliminarProductos (productos){
 
 }
 
+console.log(" --- Nueva lista de productos --- ");
+let nuevaListaProductos = agregarProducto(productos, nuevo_producto);
+nuevaListaProductos.forEach(producto => {
+    console.log(producto.nombre + " Stock: " + producto.stock);
+});
+
+
+
+
+
+console.log(" --- Lista de productos final --- ")
+let listaProductosEliminados = eliminarProductos(productos);
+listaProductosEliminados.productos.forEach(producto => {
+    console.log(producto.nombre + " Stock: " + producto.stock);
+});
+
+console.log(" --- Lista de productos eliminados --- ");
+listaProductosEliminados.productosAgotados.forEach(producto => {
+    console.log(producto.nombre + " Stock: " + producto.stock);
+});
+
 
 
 
