@@ -41,5 +41,21 @@ function registroPacientes (pacientes){
     if (atenderRegistrar){
         let pacienteAtendido = pacientes.shift();
         alert("El paciente atendido fue: " + pacienteAtendido);
-    } 
+    } else {
+        while (seguir){
+            let nuevoPaciente = window.prompt("Ingrese el nombre del nuevo paciente");
+            pacientes.push(nuevoPaciente);
+
+            seguir = window.confirm("Desea agregar un nuevo paciente?");
+            }
+            
+        console.log(" --- Lista de Pacientes Actualizada ---");
+        pacientes.forEach(paciente => {
+            console.log(paciente);
+            
+        });
+    }
+
 };
+
+registroPacientes(pacientes);
