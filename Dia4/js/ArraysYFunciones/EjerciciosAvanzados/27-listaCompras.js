@@ -46,3 +46,15 @@ function agregarProducto (listaCompras, producto) {
 
 };
 
+let producto = window.prompt("Ingrese el nombre del nuevo producto a agregar a la lista");
+
+if(producto) {
+
+    const listaNueva = agregarProducto(listaCompras, producto);
+
+    console.log("La nueva lista de productos es: ");
+    listaNueva.forEach(element => {
+        console.log(element);
+    });
+    
+}
