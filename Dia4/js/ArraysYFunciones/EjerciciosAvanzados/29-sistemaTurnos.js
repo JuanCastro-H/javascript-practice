@@ -30,3 +30,16 @@ Bonus:
 
 - Procesar varios pacientes nuevos.
 */
+
+var pacientes = ["Ana", "Pedro", "Juan"];
+
+function registroPacientes (pacientes){
+
+    let seguir = true;
+    let atenderRegistrar = window.confirm("Opcion1: atender paciente: 'Aceptar'. Opcion2: Registrar paciente: 'Cancelar' ")
+
+    if (atenderRegistrar){
+        let pacienteAtendido = pacientes.shift();
+        alert("El paciente atendido fue: " + pacienteAtendido);
+    } 
+};
