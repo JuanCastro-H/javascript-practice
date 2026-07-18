@@ -60,3 +60,13 @@ function productosVendidos(productosVendidos) {
 
 };
 
+function totalIngreso (productosVendidos) {
+
+    let total = productosVendidos.reduce((acomulador, venta) => {
+        acomulador = acomulador + venta.precio;
+        return acomulador;
+    });
+
+    return total;
+
+}
