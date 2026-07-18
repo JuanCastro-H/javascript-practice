@@ -71,3 +71,32 @@ resultado.invertido.forEach(nombre => {
     console.log(contador + " " + nombre);
 });
 
+
+/* 
+Análisis obligatorio al finalizar:
+
+- ¿Qué métodos utilizaste?
+    .slice()
+    .reverse()
+    .forEach()
+
+- ¿Para qué sirven?
+    1: Para crear una copia supercial de una porcion de un array o completo.
+    2: Para revertir el orden de un array.
+    3: Para Aplicarle una funcion a cada elemento del array.
+
+- ¿Por qué los elegiste?
+    1: Para crear una copia del ranking original.
+    2: Para invertir el orden del ranking.
+    3: Para Imprimir el numero y nombre de los jugadores de los rankings.
+
+- ¿Qué devuelve cada método?
+    1: Una copia parcial o total del array indicado.
+    2: El array invertido.
+    3: El resultado de la funcion aplicada a cada elemento del array.
+
+- ¿Qué aprendiste?
+    Que se pueden crear objetos en javascript que aparentemente son
+    como los diccionarios en Python
+
+*/

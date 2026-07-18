@@ -95,7 +95,8 @@ Análisis obligatorio al finalizar:
 - ¿Qué devuelve cada uno?
     1: La cantidad de elementos de la nueva lista al modificarla.
     2: La cantidad de elementos del arrray.
-    3: Depende de como se construya la funcion flecha pero en mi caso Cliente por Cliente.
+    3: Ejecuta un accion para cada elemento mediante lo que se le indique en la funcion,
+    en mi caso Cliente por Cliente.
 
 - ¿Qué aprendiste?
     Que el metodo forEach necesita una funcion para funcionar.

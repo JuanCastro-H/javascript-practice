@@ -56,3 +56,28 @@ function verificarNotas (notas){
 existenReprobados = verificarNotas(notas);
 
 console.log("Existen reprobados en la lista: " + existenReprobados);
+
+/* 
+Análisis obligatorio al finalizar:
+
+- ¿Qué métodos utilizaste?
+    .some
+    .find
+
+- ¿Para qué sirven?
+    1: Verifica si almenos un elemento de un array cumple con una condicion especifica.
+    2: Obtiene el primer elemento de un array en cumplir una condicion especifica.
+
+- ¿Por qué los elegiste?
+    1: Para verificar si hubo reprobados.
+    2: Para saber quien fue el primer reprobado.
+
+- ¿Qué devuelve cada método?
+    1: true o false si se cumple que hay 1 elemento que cumple con la condicion especificada.
+    2: El primer elemento en cumplir la condicion especificada.
+
+
+- ¿Qué aprendiste?
+    Como hacer funciones flecha sin corchetes, y como funcionan some() y find()
+
+*/

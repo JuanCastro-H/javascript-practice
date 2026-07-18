@@ -18,7 +18,7 @@ Mientras el administrador acepte:
 Pedir:
 
 - Nombre.
-- Hora de entrada (0-23).
+- Hora de entrada (0-23).]
 - Mes de ingreso a la empresa.
 - Año de nacimiento.
 

@@ -60,3 +60,23 @@ var producto = window.prompt("Ingrese el nombre del producto que desea buscar.")
 var encontrado = buscarProducto(inventario, producto)
 
 console.log("Fue encontrado el producto que usted busca: " + encontrado);
+
+/*
+Análisis obligatorio al finalizar:
+
+- ¿Qué métodos utilizaste?
+    .includes
+
+- ¿Para qué sirven?
+    Sirve para verificar si un elemento esta incluido en un array.
+
+- ¿Por qué los elegiste?
+    Por que era necesario verificar si un producto formaba parte del inventario.
+
+- ¿Qué devuelve cada uno?
+    El metodo includes devuelve true o false dependiendo si el elemento se encuentra o no dentro del array.
+
+- ¿Qué aprendiste?
+    Que las funciones flechas es una forma de crear una funcion simplificada.
+
+*/
