@@ -50,3 +50,13 @@ var productosVendidos = [
     { producto: "Mouse", precio: 80, cantidad: 5 },
     { producto: "Monitor", precio: 900, cantidad: 1 }
 ];
+
+function productosVendidos(productosVendidos) {
+
+    console.group(" --- Productos Vendidos --- ");
+    productosVendidos.forEach(venta => {
+        console.log(venta.nombre + " Con " + venta.cantidad + " Compras" );
+    });
+
+};
+
