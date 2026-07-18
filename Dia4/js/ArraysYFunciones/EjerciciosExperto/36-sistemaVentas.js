@@ -70,3 +70,11 @@ function totalIngreso (productosVendidos) {
     return total;
 
 }
+
+function promedio (productosVendidos){
+    let total = totalIngreso(productosVendidos);
+    let promedio = total / productosVendidos.length;
+
+    return promedio;
+}
+
