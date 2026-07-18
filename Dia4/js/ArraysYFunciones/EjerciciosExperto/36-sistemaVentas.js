@@ -1,5 +1,4 @@
 /************************************************
-ARCHIVO: 36-sistema-ventas.js
 EJERCICIO 36 — SISTEMA DE VENTAS
 Dificultad: Experto
 ************************************************
@@ -45,3 +44,9 @@ Bonus:
 
 - Ordenar el reporte por mayor ingreso generado.
 */
+
+var productosVendidos = [
+    { producto: "Teclado", precio: 150, cantidad: 2 },
+    { producto: "Mouse", precio: 80, cantidad: 5 },
+    { producto: "Monitor", precio: 900, cantidad: 1 }
+];
