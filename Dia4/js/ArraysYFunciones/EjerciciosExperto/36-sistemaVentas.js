@@ -78,3 +78,14 @@ function promedio (productosVendidos){
     return promedio;
 }
 
+function ventaMayor (productosVendidos){
+
+    let ventasGrandes = productosVendidos.filter(producto => producto.precio >= 500);
+
+    console.log(" --- Productos Vendidos A Mas De 500 --- ");
+    ventasGrandes.forEach(venta => {
+        console.log(venta.nombre + " $" + venta.precio );
+    })
+
+
+};
