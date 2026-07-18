@@ -55,7 +55,7 @@ function mostrarProductos(productosVendidos) {
 
     console.log(" --- Productos Vendidos --- ");
 
-    productosVendidos.sort( (a , b) => a.precio - b.precio);
+    productosVendidos.sort( (a , b) => (b.precio * b.cantidad) - (a.precio * a.cantidad));
 
     productosVendidos.forEach(venta => {
         console.log(venta.producto + " - " + venta.cantidad + " Unidades." );
@@ -88,7 +88,7 @@ function mostrarVentasGrandes (productosVendidos){
 
     console.log(" --- Productos Vendidos A Mas De 500 --- ");
     ventasGrandes.forEach(venta => {
-        console.log(venta.producto + " - $" + venta.precio );
+        console.log(venta.producto + " - $" + (venta.precio * venta.cantidad) );
     })
 
 };
