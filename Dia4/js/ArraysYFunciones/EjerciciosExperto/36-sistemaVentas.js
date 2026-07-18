@@ -51,11 +51,14 @@ var productosVendidos = [
     { producto: "Monitor", precio: 900, cantidad: 1 }
 ];
 
-function vendidos(productosVendidos) {
+function mostrarProductos(productosVendidos) {
 
-    console.group(" --- Productos Vendidos --- ");
+    console.log(" --- Productos Vendidos --- ");
+
+    productosVendidos.sort( (a , b) => a.precio - b.precio);
+
     productosVendidos.forEach(venta => {
-        console.log(venta.producto + " Con " + venta.cantidad + " Compras" );
+        console.log(venta.producto + " - " + venta.cantidad + " Unidades." );
     });
 
 };
@@ -78,13 +81,14 @@ function promedio (productosVendidos){
     return promedio;
 }
 
-function ventaMayor (productosVendidos){
+function mostrarVentasGrandes (productosVendidos){
 
-    let ventasGrandes = productosVendidos.filter(producto => producto.precio >= 500);
+    let ventasGrandes = productosVendidos.filter(producto => producto.precio * producto.cantidad >= 500);
+
 
     console.log(" --- Productos Vendidos A Mas De 500 --- ");
     ventasGrandes.forEach(venta => {
-        console.log(venta.producto + " $" + venta.precio );
+        console.log(venta.producto + " - $" + venta.precio );
     })
 
 };
@@ -94,7 +98,7 @@ function reporte (productosVendidos){
     console.log(" --- REPORTE DE VENTAS --- ");
 
     // Productos vendidos
-    vendidos(productosVendidos);
+    mostrarProductos(productosVendidos);
 
     let totalVentas = totalIngreso(productosVendidos);
 
@@ -109,7 +113,7 @@ function reporte (productosVendidos){
 
     // Ventas Grandes
     console.log(" --- Ventas Mas Grandes --- ");
-    ventaMayor(productosVendidos);
+    mostrarVentasGrandes(productosVendidos);
 
 }
 
