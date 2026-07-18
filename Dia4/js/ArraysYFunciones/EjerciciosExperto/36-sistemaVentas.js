@@ -55,7 +55,7 @@ function vendidos(productosVendidos) {
 
     console.group(" --- Productos Vendidos --- ");
     productosVendidos.forEach(venta => {
-        console.log(venta.nombre + " Con " + venta.cantidad + " Compras" );
+        console.log(venta.producto + " Con " + venta.cantidad + " Compras" );
     });
 
 };
@@ -65,7 +65,7 @@ function totalIngreso (productosVendidos) {
     let total = productosVendidos.reduce((acomulador, venta) => {
         acomulador = acomulador + (venta.precio * venta.cantidad);
         return acomulador;
-    });
+    }, 0);
 
     return total;
 
@@ -84,7 +84,7 @@ function ventaMayor (productosVendidos){
 
     console.log(" --- Productos Vendidos A Mas De 500 --- ");
     ventasGrandes.forEach(venta => {
-        console.log(venta.nombre + " $" + venta.precio );
+        console.log(venta.producto + " $" + venta.precio );
     })
 
 };
