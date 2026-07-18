@@ -51,7 +51,7 @@ var productosVendidos = [
     { producto: "Monitor", precio: 900, cantidad: 1 }
 ];
 
-function productosVendidos(productosVendidos) {
+function vendidos(productosVendidos) {
 
     console.group(" --- Productos Vendidos --- ");
     productosVendidos.forEach(venta => {
@@ -87,5 +87,30 @@ function ventaMayor (productosVendidos){
         console.log(venta.nombre + " $" + venta.precio );
     })
 
-
 };
+
+function reporte (productosVendidos){
+
+    console.log(" --- REPORTE DE VENTAS --- ");
+
+    // Productos vendidos
+    vendidos(productosVendidos);
+
+    let totalVentas = totalIngreso(productosVendidos);
+
+    // Total Vendido
+    console.log(" ---  Total Ventas --- ");
+    console.log(totalVentas);
+
+    // Promedio de ventas
+    console.log(" --- Promedio De Las Ventas --- ");
+    let promedioVentas = promedio(productosVendidos);
+    console.log("El promedio de ventas fue de: " + promedioVentas);
+
+    // Ventas Grandes
+    console.log(" --- Ventas Mas Grandes --- ");
+    ventaMayor(productosVendidos);
+
+}
+
+reporte(productosVendidos);
