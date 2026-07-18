@@ -63,7 +63,7 @@ function productosVendidos(productosVendidos) {
 function totalIngreso (productosVendidos) {
 
     let total = productosVendidos.reduce((acomulador, venta) => {
-        acomulador = acomulador + venta.precio;
+        acomulador = acomulador + (venta.precio * venta.cantidad);
         return acomulador;
     });
 
