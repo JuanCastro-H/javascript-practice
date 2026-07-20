@@ -76,7 +76,7 @@ function menu (){
 
     while (seguir){
 
-        Alert(` --- Menu --- 
+        alert(` --- Menu --- 
             1 - Agregar Una Nueva Cancion.
             2 - Obtener Solo Canciones Modernas.
             3 - Invertir Playlist.
