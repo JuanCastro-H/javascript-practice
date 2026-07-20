@@ -40,7 +40,7 @@ function retirarCancionesAntiguas (playlist){
 
     const copiaPlaylist = playlist.slice();
 
-    let modernas = playlist.filter(cancion => cancion.anio > 2000);
+    let modernas = playlist.slice(cancion => cancion.anio > 2000);
 
     return {
         original : copiaPlaylist,
@@ -92,13 +92,13 @@ function menu (){
             playlistActualizada.forEach(cancion => {
                 console.log(`Cancion ${cancion.titulo} Del Anio ${cancion.anio}`);
             });
-        } else if (2) {
+        } else if (opcion === 2) {
             const cancionesFiltradas = retirarCancionesAntiguas(playlist);
             console.log(" --- Canciones Modernas ---");
             cancionesFiltradas.modernas.forEach(cancion => {
                 console.log(`Cancion ${cancion.titulo} Del Anio ${cancion.anio}`);
             });
-        } else if (3) {
+        } else if (opcion === 3) {
             const playlistInvertida = invertirLista(playlist);
             playlistInvertida.forEach(cancion => {
             console.log(`Cancion ${cancion.titulo} Del Anio ${cancion.anio}`);
