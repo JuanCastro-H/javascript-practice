@@ -40,7 +40,7 @@ function retirarCancionesAntiguas (playlist){
 
     const copiaPlaylist = playlist.slice();
 
-    let modernas = playlist.slice(cancion => cancion.anio > 2000);
+    let modernas = playlist.filter(cancion => cancion.anio > 2000);
 
     return {
         original : copiaPlaylist,
