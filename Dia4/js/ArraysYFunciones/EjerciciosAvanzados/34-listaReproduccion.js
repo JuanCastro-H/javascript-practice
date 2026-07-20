@@ -107,7 +107,7 @@ function menu (){
             console.log("Opcion Invalida");
         }
 
-        seguir = window.confirm("Desea salir del menu?");
+        seguir = !window.confirm("Desea salir del menu?");
     }
 }
 
