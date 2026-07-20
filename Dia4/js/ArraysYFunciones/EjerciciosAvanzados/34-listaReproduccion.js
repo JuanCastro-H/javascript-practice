@@ -48,3 +48,20 @@ function retirarCancionesAntiguas (playlist){
     }
 }
 
+
+function agregarCancion (playlist){
+
+    let seguir = true;
+
+    while (seguir){
+        let nombre = window.prompt("Ingrese el nombre de la cancion");
+        let fecha = Number(window.promedio("Ingrese el anio de la cancion"));
+
+        playlist.push({titulo: nombre, anio: fecha});
+
+        seguir = window.confirm("Desea agregar una nueva cancion?");
+    }
+
+    return playlist;
+}
+
