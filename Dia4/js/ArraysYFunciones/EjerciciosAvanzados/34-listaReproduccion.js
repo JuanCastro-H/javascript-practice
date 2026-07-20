@@ -69,3 +69,46 @@ function invertirLista (playlist){
 
     return playlist.reverse();
 }
+
+function menu (){
+    
+    let seguir = true;
+
+    while (seguir){
+
+        Alert(` --- Menu --- 
+            1 - Agregar Una Nueva Cancion.
+            2 - Obtener Solo Canciones Modernas.
+            3 - Invertir Playlist.
+            `);
+        
+        let opcion = Number(window.prompt("Que opcion Desea Realizar?","0 - Mostrar Opciones De Menu"));
+
+        if (opcion === 0){
+            continue;
+        } else if (1) {
+            const playlistActualizada = agregarCancion(playlist);
+            console.log(" --- Lista De Canciones Actualizada ---");
+            playlistActualizada.forEach(cancion => {
+                console.log(`Cancion ${cancion.titulo} Del Anio ${cancion.anio}`);
+            });
+        } else if (2) {
+            const cancionesFiltradas = retirarCancionesAntiguas(playlist);
+            console.log(" --- Canciones Modernas ---");
+            cancionesFiltradas.modernas.forEach(cancion => {
+                console.log(`Cancion ${cancion.titulo} Del Anio ${cancion.anio}`);
+            });
+        } else if (3) {
+            const playlistInvertida = invertirLista(playlist);
+            playlistInvertida.forEach(cancion => {
+            console.log(`Cancion ${cancion.titulo} Del Anio ${cancion.anio}`);
+        });
+        } else {
+            console.log("Opcion Invalida");
+        }
+
+        seguir = window.confirm("Desea salir del menu?");
+    }
+}
+
+menu();
