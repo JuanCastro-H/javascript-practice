@@ -112,7 +112,7 @@ function menu (){
 
         if (opcion === 0){
             continue;
-        } else if (1) {
+        } else if (opcion === 1) {
             const playlistActualizada = agregarCancion(playlist);
             console.log(" --- Lista De Canciones Actualizada ---");
             playlistActualizada.forEach(cancion => {
