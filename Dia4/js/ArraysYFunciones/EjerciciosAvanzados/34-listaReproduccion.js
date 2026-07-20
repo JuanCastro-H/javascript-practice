@@ -64,6 +64,7 @@ function reemplazarCancionesAntiguas (playlist){
                         titulo : nombre,
                         anio : fecha
                     });
+                    break;
                 }
             }
         }
