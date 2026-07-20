@@ -48,6 +48,30 @@ function retirarCancionesAntiguas (playlist){
     }
 }
 
+function reemplazarCancionesAntiguas (playlist){
+
+    for (let i = 0 ; i < playlist.length ; i++){
+
+        if (playlist[i] < 2000){
+            let seguir = true;
+            while (seguir){
+                let nombre = window.prompt("Cual es el Nombre de La nueva cancion?");
+                let fecha = Number(window.prompt("Cual es el anio de la nueva cancion?"));
+                if (fecha <2000) {
+                    alert("La cancion que intentas ingresar es vieja");
+                } else{
+                    playlist.splice(i, 1, {
+                        titulo : nombre,
+                        anio : fecha
+                    });
+                }
+            }
+        }
+    }
+
+    return playlist;
+
+}
 
 function agregarCancion (playlist){
 
@@ -80,6 +104,7 @@ function menu (){
             1 - Agregar Una Nueva Cancion.
             2 - Obtener Solo Canciones Modernas.
             3 - Invertir Playlist.
+            4 - Reemplazar Canciones Antiguas.
             `);
         
         let opcion = Number(window.prompt("Que opcion Desea Realizar?","0 - Mostrar Opciones De Menu"));
@@ -101,6 +126,11 @@ function menu (){
         } else if (opcion === 3) {
             const playlistInvertida = invertirLista(playlist);
             playlistInvertida.forEach(cancion => {
+            console.log(`Cancion ${cancion.titulo} Del Anio ${cancion.anio}`);
+        });
+        } else if (opcion === 4){
+            const playlistReemplazada = reemplazarCancionesAntiguas(playlist);
+            playlistReemplazada.forEach(cancion => {
             console.log(`Cancion ${cancion.titulo} Del Anio ${cancion.anio}`);
         });
         } else {
