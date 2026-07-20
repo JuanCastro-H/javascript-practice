@@ -43,3 +43,16 @@ function obtenerNombreProductos (productos) {
     return productos.map(producto => producto.nombre);
 }
 
+const productosOrdenados = ordernarProductos(productos);
+
+console.log("--- Lista De Productos Por Precio ---");
+productosOrdenados.forEach(producto => {
+console.log(`Producto: ${producto.nombre} ${producto.precio}$`);
+});
+    
+    
+const nombresProductos = obtenerNombreProductos(productos);
+
+console.log(" --- Lista De Productos ---");
+nombresProductos.forEach(producto => console.log(producto));
+
