@@ -25,3 +25,16 @@ Bonus:
 
 - Permitir orden descendente.
 */
+
+var productos = [
+    { nombre: "Teclado", precio: 120 },
+    { nombre: "Mouse", precio: 80 },
+    { nombre: "Monitor", precio: 700 }
+];
+
+function ordernarProductos (productos) {
+
+    return productos.sort((a,b) => b.precio - a.precio);
+
+}
+
