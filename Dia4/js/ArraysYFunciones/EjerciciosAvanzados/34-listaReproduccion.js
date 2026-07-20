@@ -52,7 +52,7 @@ function reemplazarCancionesAntiguas (playlist){
 
     for (let i = 0 ; i < playlist.length ; i++){
 
-        if (playlist[i] < 2000){
+        if (playlist[i].anio < 2000){
             let seguir = true;
             while (seguir){
                 let nombre = window.prompt("Cual es el Nombre de La nueva cancion?");
