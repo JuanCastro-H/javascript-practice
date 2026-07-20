@@ -38,3 +38,8 @@ function ordernarProductos (productos) {
 
 }
 
+
+function obtenerNombreProductos (productos) {
+    return productos.map(producto => producto.nombre);
+}
+
