@@ -65,3 +65,7 @@ function agregarCancion (playlist){
     return playlist;
 }
 
+function invertirLista (playlist){
+
+    return playlist.reverse();
+}
