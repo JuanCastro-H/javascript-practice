@@ -68,3 +68,8 @@ topPartidasFinales.forEach(partida => {
     console.log(partida);
 });
 
+console.log(" --- Historial De Partidas Invertido ---")
+const partidasInvertidas = invertirOrdenPartidas(partidas);
+partidasInvertidas.forEach(partida => {
+    console.log(partida);
+});
