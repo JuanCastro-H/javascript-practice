@@ -44,3 +44,8 @@ function obtenerUltimasPartidas (partidas){
 
     return ultimasPartidas
 }
+
+function invertirOrdenPartidas (partidas){
+
+    return partidas.inverse();
+}
