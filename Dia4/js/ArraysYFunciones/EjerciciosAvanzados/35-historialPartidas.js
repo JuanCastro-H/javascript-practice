@@ -28,3 +28,11 @@ Bonus:
 
 - Permitir elegir cuántas partidas mostrar.
 */
+
+var partidas = ["G1", "G2", "G3", "G2", "G4", "G5"];
+
+function encontrarPartida (partidas, partida){
+    let indice = partidas.lastIndexOf(partida);
+
+    return partidas[indice];
+}
