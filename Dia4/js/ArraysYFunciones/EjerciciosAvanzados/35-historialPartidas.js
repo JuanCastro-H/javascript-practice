@@ -36,3 +36,11 @@ function encontrarPartida (partidas, partida){
 
     return partidas[indice];
 }
+
+
+function obtenerUltimasPartidas (partidas){
+    let numeroPartidas = partidas.length;
+    let ultimasPartidas = partidas.slice(numeroPartidas-3);
+
+    return ultimasPartidas
+}
