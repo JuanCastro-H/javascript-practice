@@ -62,3 +62,9 @@ partidaBuscada.forEach(partida => {
     console.log(partida);
 });
 
+console.log(" --- Ultimas Partidas Jugadas ---")
+const topPartidasFinales = obtenerUltimasPartidas(partidas);
+topPartidasFinales.forEach(partida => {
+    console.log(partida);
+});
+
