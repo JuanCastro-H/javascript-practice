@@ -34,6 +34,10 @@ var partidas = ["G1", "G2", "G3", "G2", "G4", "G5"];
 function encontrarPartida (partidas, partida){
     let indice = partidas.lastIndexOf(partida);
 
+    if (indice === -1){
+        alert("Esa partida no existe.")
+    }
+
     return partidas[indice];
 }
 
@@ -49,3 +53,12 @@ function invertirOrdenPartidas (partidas){
 
     return partidas.inverse();
 }
+
+let partidaSolicitada = window.prompt("Ingrese la partida a buscar");
+
+console.log(" --- Buscar Partida ---")
+const partidaBuscada = encontrarPartida(partidas, partidaSolicitada);
+partidaBuscada.forEach(partida => {
+    console.log(partida);
+});
+
